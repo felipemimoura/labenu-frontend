@@ -1,10 +1,11 @@
 import React from 'react'
+import useForm from '../../../../Hooks/useForm'
 import * as S from './Styles'
 
 const Input = ({ label, type, name, value, onChange, error, onBlur }) => {
   return (
     <S.Wrapper>
-      <S.Label html={name}>
+      <S.Label htmlFor={name}>
         {label}
       </S.Label>
       <S.Input type={type}
